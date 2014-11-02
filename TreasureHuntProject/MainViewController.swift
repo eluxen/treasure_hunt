@@ -13,7 +13,6 @@ import CoreLocation
 import MapKit
 
 
-
 class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     
@@ -37,7 +36,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var desiredLocation: CLLocation?
     
-    @IBOutlet weak var questionView: UIView!
+    @IBOutlet weak var questionView: UITextView!
     @IBOutlet weak var showQuestionView: UIView!
     @IBOutlet weak var timeView: UIView!
     
@@ -64,6 +63,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         manager.requestAlwaysAuthorization()
         
         manager.startUpdatingLocation()
+
         
         
         //Setup our Map View
@@ -78,6 +78,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         GetNextQuestion()
     }
+    
     
     func GetNextQuestion() {
         var point: NSDictionary = points![questionIndex] as NSDictionary
