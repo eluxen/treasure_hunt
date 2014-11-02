@@ -62,12 +62,19 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func GetGameData() -> NSDictionary {
-        //get json.
-        var gameData = "Tomer"
+        let url = NSURL(string: "http://nadav-klarna.ngrok.com/games/search?name=Where")
         
-        var stringData: NSData? = gameData.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
-        var err: NSError?;
-        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData!, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
+        var gameData: NSString?
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
+            gameData = NSString(data: data, encoding: NSUTF8StringEncoding)
+        }
+        
+        task.resume()
+        
+        var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+        var err: NSError?
+        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
         if (err != nil) {
             
         }
