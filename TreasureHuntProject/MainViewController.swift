@@ -28,6 +28,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var startTime: NSDate = NSDate()
     
+    var aggregatedTime: Int = 0
+    
     @IBOutlet weak var timeView: UIView!
     var questionContent: NSString = "Where is the dog?"
     
@@ -76,7 +78,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         }
         return json
     }
-    
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
         myLocations.append(locations[0] as CLLocation)
@@ -148,6 +149,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBAction func showQuestionPressed(sender: AnyObject) {
         UIAlertView(title: "Clue #1", message: questionContent, delegate: nil, cancelButtonTitle: "Dismiss").show()
+    }
+    
+    func checkIn() {
+        
+        
+        
     }
     
     
