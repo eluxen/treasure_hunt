@@ -14,6 +14,14 @@
 		4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4679D63B1A0622CB00DC080E /* LaunchScreen.xib */; };
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
+		6AEC7DB01A06335B00DF33DE /* Treasure-Hunt_TITLE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DAD1A06335B00DF33DE /* Treasure-Hunt_TITLE.jpg */; };
+		6AEC7DB11A06335B00DF33DE /* treasuremaplarge-614x400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DAE1A06335B00DF33DE /* treasuremaplarge-614x400.jpg */; };
+		6AEC7DB21A06335B00DF33DE /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DAF1A06335B00DF33DE /* images.jpeg */; };
+		6AEC7DB41A06363600DF33DE /* 10280449-online-treasure-hunt-at-enerfoodcom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DB31A06363600DF33DE /* 10280449-online-treasure-hunt-at-enerfoodcom.jpg */; };
+		6AEC7DB61A0636DB00DF33DE /* unnamed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DB51A0636DB00DF33DE /* unnamed.jpg */; };
+		6AEC7DB91A0639EF00DF33DE /* bg (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DB71A0639EF00DF33DE /* bg (1).jpg */; };
+		6AEC7DBA1A0639EF00DF33DE /* images (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DB81A0639EF00DF33DE /* images (1).jpeg */; };
+		6AEC7DBC1A063FBC00DF33DE /* twitter_lov_na_blago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC7DBB1A063FBC00DF33DE /* twitter_lov_na_blago.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
 		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6AEC7DAD1A06335B00DF33DE /* Treasure-Hunt_TITLE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Treasure-Hunt_TITLE.jpg"; path = "../../../Downloads/Treasure-Hunt_TITLE.jpg"; sourceTree = "<group>"; };
+		6AEC7DAE1A06335B00DF33DE /* treasuremaplarge-614x400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "treasuremaplarge-614x400.jpg"; path = "../../../Downloads/treasuremaplarge-614x400.jpg"; sourceTree = "<group>"; };
+		6AEC7DAF1A06335B00DF33DE /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
+		6AEC7DB31A06363600DF33DE /* 10280449-online-treasure-hunt-at-enerfoodcom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "10280449-online-treasure-hunt-at-enerfoodcom.jpg"; path = "../../../Downloads/10280449-online-treasure-hunt-at-enerfoodcom.jpg"; sourceTree = "<group>"; };
+		6AEC7DB51A0636DB00DF33DE /* unnamed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = unnamed.jpg; path = ../../../Downloads/unnamed.jpg; sourceTree = "<group>"; };
+		6AEC7DB71A0639EF00DF33DE /* bg (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bg (1).jpg"; path = "../../../Downloads/bg (1).jpg"; sourceTree = "<group>"; };
+		6AEC7DB81A0639EF00DF33DE /* images (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images (1).jpeg"; path = "../../../Downloads/images (1).jpeg"; sourceTree = "<group>"; };
+		6AEC7DBB1A063FBC00DF33DE /* twitter_lov_na_blago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twitter_lov_na_blago.jpg; path = ../../../Downloads/twitter_lov_na_blago.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,14 @@
 		4679D62F1A0622CB00DC080E /* TreasureHuntProject */ = {
 			isa = PBXGroup;
 			children = (
+				6AEC7DBB1A063FBC00DF33DE /* twitter_lov_na_blago.jpg */,
+				6AEC7DB71A0639EF00DF33DE /* bg (1).jpg */,
+				6AEC7DB81A0639EF00DF33DE /* images (1).jpeg */,
+				6AEC7DB51A0636DB00DF33DE /* unnamed.jpg */,
+				6AEC7DB31A06363600DF33DE /* 10280449-online-treasure-hunt-at-enerfoodcom.jpg */,
+				6AEC7DAD1A06335B00DF33DE /* Treasure-Hunt_TITLE.jpg */,
+				6AEC7DAE1A06335B00DF33DE /* treasuremaplarge-614x400.jpg */,
+				6AEC7DAF1A06335B00DF33DE /* images.jpeg */,
 				4679D6321A0622CB00DC080E /* AppDelegate.swift */,
 				4679D6341A0622CB00DC080E /* ViewController.swift */,
 				4679D6361A0622CB00DC080E /* Main.storyboard */,
@@ -196,8 +220,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
+				6AEC7DB41A06363600DF33DE /* 10280449-online-treasure-hunt-at-enerfoodcom.jpg in Resources */,
+				6AEC7DB61A0636DB00DF33DE /* unnamed.jpg in Resources */,
+				6AEC7DBA1A0639EF00DF33DE /* images (1).jpeg in Resources */,
+				6AEC7DB11A06335B00DF33DE /* treasuremaplarge-614x400.jpg in Resources */,
 				4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */,
+				6AEC7DB91A0639EF00DF33DE /* bg (1).jpg in Resources */,
+				6AEC7DB01A06335B00DF33DE /* Treasure-Hunt_TITLE.jpg in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
+				6AEC7DBC1A063FBC00DF33DE /* twitter_lov_na_blago.jpg in Resources */,
+				6AEC7DB21A06335B00DF33DE /* images.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +443,7 @@
 				4679D64E1A0622CB00DC080E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4679D64F1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +452,7 @@
 				4679D6511A0622CB00DC080E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
