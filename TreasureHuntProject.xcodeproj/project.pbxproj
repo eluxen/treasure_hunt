@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463457B61A06881100FC9E55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463457B41A06881100FC9E55 /* LaunchScreen.xib */; };
 		4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6321A0622CB00DC080E /* AppDelegate.swift */; };
 		4679D6351A0622CB00DC080E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6341A0622CB00DC080E /* ViewController.swift */; };
 		4679D6381A0622CB00DC080E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6361A0622CB00DC080E /* Main.storyboard */; };
@@ -33,13 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		463457B51A06881100FC9E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TreasureHuntProject/Info.plist; sourceTree = "<group>"; };
 		4679D6321A0622CB00DC080E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4679D6341A0622CB00DC080E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4679D6371A0622CB00DC080E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4679D6391A0622CB00DC080E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4679D63C1A0622CB00DC080E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4679D6421A0622CB00DC080E /* TreasureHuntProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 				6A72E6EE1A06789100C37668 /* DoneViewController.swift */,
 				4679D6521A06286300DC080E /* MainViewController.swift */,
 				4679D6391A0622CB00DC080E /* Images.xcassets */,
-				4679D63B1A0622CB00DC080E /* LaunchScreen.xib */,
 				4679D6301A0622CB00DC080E /* Supporting Files */,
 			);
 			path = TreasureHuntProject;
@@ -108,6 +108,7 @@
 		4679D6301A0622CB00DC080E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				463457B41A06881100FC9E55 /* LaunchScreen.xib */,
 				6ACFA5481A0668D400BED937 /* checkInImage.png */,
 				6A72E6F01A06799C00C37668 /* TreasureDone.jpg */,
 				46E567BD1A06626D00536E9C /* klarna-logo.png */,
@@ -222,6 +223,7 @@
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
 				6A72E6F11A06799C00C37668 /* TreasureDone.jpg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
+				463457B61A06881100FC9E55 /* LaunchScreen.xib in Resources */,
 				46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,20 +268,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		463457B41A06881100FC9E55 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463457B51A06881100FC9E55 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		4679D6361A0622CB00DC080E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4679D6371A0622CB00DC080E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4679D63B1A0622CB00DC080E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4679D63C1A0622CB00DC080E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

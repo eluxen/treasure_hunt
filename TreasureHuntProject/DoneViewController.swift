@@ -17,6 +17,8 @@ class DoneViewController: UIViewController {
     
     var elapsedTime: Int?
     
+    @IBOutlet weak var secondsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = NSBundle.mainBundle().URLForResource("money.mp3", withExtension: nil)
@@ -25,6 +27,7 @@ class DoneViewController: UIViewController {
         backgroundMusicPlayer.numberOfLoops = -1
         backgroundMusicPlayer.prepareToPlay()
         backgroundMusicPlayer.play()
+        secondsLabel.text = NSString(format: "In %d seconds!", elapsedTime!)
     }
 
     @IBAction func restartGameButtonPressed(sender: AnyObject) {

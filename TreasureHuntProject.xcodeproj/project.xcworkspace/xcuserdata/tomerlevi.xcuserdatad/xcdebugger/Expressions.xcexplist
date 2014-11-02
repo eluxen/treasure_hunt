@@ -3,7 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "TreasureHuntProject.ViewController.playButtonPressed (TreasureHuntProject.ViewController)(ObjectiveC.UIButton) -&gt; ():ViewController.swift">
+         contextName = "TreasureHuntProject.ViewController.(playButtonPressed (TreasureHuntProject.ViewController) -&gt; (ObjectiveC.UIButton) -&gt; ()).(closure #1).(closure #1) with unmangled suffix &quot;_promote0&quot;:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "TreasureHuntProject.MainViewController.locationManager (TreasureHuntProject.MainViewController)(ObjectiveC.CLLocationManager, didUpdateLocations : Swift.Array&lt;Swift.AnyObject&gt;) -&gt; ():MainViewController.swift">
@@ -18,6 +23,12 @@
                value = "locations[0]">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TreasureHuntProject.MainViewController.viewDidLoad (TreasureHuntProject.MainViewController)() -&gt; ():MainViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TreasureHuntProject.ViewController.playButtonPressed (TreasureHuntProject.ViewController)(ObjectiveC.UIButton) -&gt; ():ViewController.swift">
       </ContextState>
       <ContextState
          contextName = "TreasureHuntProject.ViewController.(playButtonPressed (TreasureHuntProject.ViewController) -&gt; (ObjectiveC.UIButton) -&gt; ()).(closure #1):ViewController.swift">
