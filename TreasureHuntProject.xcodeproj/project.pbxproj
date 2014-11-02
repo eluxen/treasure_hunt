@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		463457B61A06881100FC9E55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463457B41A06881100FC9E55 /* LaunchScreen.xib */; };
+		463457B81A0689EB00FC9E55 /* Locations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 463457B71A0689EB00FC9E55 /* Locations.gpx */; };
+		463457BA1A068D2600FC9E55 /* route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 463457B91A068D2600FC9E55 /* route.gpx */; };
+		463457BC1A068DAF00FC9E55 /* route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 463457BB1A068DAF00FC9E55 /* route.gpx */; };
 		4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6321A0622CB00DC080E /* AppDelegate.swift */; };
 		4679D6351A0622CB00DC080E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6341A0622CB00DC080E /* ViewController.swift */; };
 		4679D6381A0622CB00DC080E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6361A0622CB00DC080E /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		463457B51A06881100FC9E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		463457B71A0689EB00FC9E55 /* Locations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Locations.gpx; sourceTree = "<group>"; };
+		463457B91A068D2600FC9E55 /* route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = route.gpx; sourceTree = "<group>"; };
+		463457BB1A068DAF00FC9E55 /* route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = route.gpx; sourceTree = "<group>"; };
 		4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TreasureHuntProject/Info.plist; sourceTree = "<group>"; };
 		4679D6321A0622CB00DC080E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 		4679D6241A0622CB00DC080E = {
 			isa = PBXGroup;
 			children = (
+				463457BB1A068DAF00FC9E55 /* route.gpx */,
+				463457B91A068D2600FC9E55 /* route.gpx */,
+				463457B71A0689EB00FC9E55 /* Locations.gpx */,
 				4679D62F1A0622CB00DC080E /* TreasureHuntProject */,
 				4679D6451A0622CB00DC080E /* TreasureHuntProjectTests */,
 				4679D62E1A0622CB00DC080E /* Products */,
@@ -216,13 +225,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463457B81A0689EB00FC9E55 /* Locations.gpx in Resources */,
 				6ACFA5491A0668D400BED937 /* checkInImage.png in Resources */,
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
 				6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */,
+				463457BA1A068D2600FC9E55 /* route.gpx in Resources */,
 				6A72E6F31A0679AB00C37668 /* money.mp3 in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
 				6A72E6F11A06799C00C37668 /* TreasureDone.jpg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
+				463457BC1A068DAF00FC9E55 /* route.gpx in Resources */,
 				463457B61A06881100FC9E55 /* LaunchScreen.xib in Resources */,
 				46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */,
 			);

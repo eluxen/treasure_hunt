@@ -184,7 +184,7 @@
                             <constraint firstItem="yif-uU-xqi" firstAttribute="top" secondItem="vkg-gf-zUG" secondAttribute="bottom" id="gAx-ae-bZh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XlH-kw-2f3"/>
+                    <navigationItem key="navigationItem" title="Treasure Hunt" id="XlH-kw-2f3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="0e1-s2-FzF" id="qHI-ts-fwq"/>
