@@ -96,7 +96,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         if distanceInMeters < 10 {
             questionIndex++;
             if questionIndex < points!.count {
-                UIAlertView(title: "Treasure Hunt", message: "YOU ROCK!", delegate: nil, cancelButtonTitle: "Proceed").show()
+                UIAlertView(title: "You're on the Spot", message: "YOU ROCK!", delegate: nil, cancelButtonTitle: "Proceed").show()
                 showQuestionPressed("")
                 GetNextQuestion()
             }
@@ -108,7 +108,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             }
         }
         else {
-            UIAlertView(title: "Treasure Hunt", message: "YOU SUCK!", delegate: nil, cancelButtonTitle: "Dismiss").show()
+            UIAlertView(title: "Wrong Place", message: "YOU SUCK!", delegate: nil, cancelButtonTitle: "Dismiss").show()
         }
     }
     
