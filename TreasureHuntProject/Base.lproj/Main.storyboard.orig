@@ -39,7 +39,7 @@
                                 <rect key="frame" x="-65" y="56" width="385" height="628"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-FW-q0Y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-FW-q0Y">
                                 <rect key="frame" x="61" y="154" width="198" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -48,12 +48,16 @@
                                 <rect key="frame" x="49" y="89" width="222" height="43"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnQ-HG-6O9">
-                                <rect key="frame" x="128" y="198" width="65" height="40"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
-                                <size key="titleShadowOffset" width="5" height="6"/>
-                                <state key="normal" title="Play"/>
+                                <rect key="frame" x="128" y="192" width="65" height="40"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
+                                <size key="titleShadowOffset" width="0.5" height="1"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <state key="selected">
                                     <color key="titleColor" red="0.76673005756578949" green="0.33813463252800502" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -86,11 +90,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-Wu-y2A"/>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
-                                <rect key="frame" x="0.0" y="478" width="320" height="95"/>
-=======
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-Wu-y2A">
                                 <rect key="frame" x="0.0" y="60" width="320" height="568"/>
                                 <constraints>
@@ -107,38 +106,33 @@
                                     <action selector="showQuestionPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="N2p-e8-efc"/>
                                 </connections>
                             </button>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
-                                <rect key="frame" x="0.0" y="478" width="320" height="90"/>
->>>>>>> d4ff2d2f6c015e4b48eac2ad54badc9b75d36f23
+                            <view userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
+                                <rect key="frame" x="76" y="519" width="169" height="46"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-Pc-ce9">
-                                        <rect key="frame" x="24" y="15" width="267" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+<<<<<<< HEAD
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-s2-FzF">
+                                        <rect key="frame" x="0.0" y="8" width="169" height="38"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+=======
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-s2-FzF">
                                         <rect key="frame" x="31" y="55" width="86" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> 484d7a7a815376fa1450e08d24ecc6e96ba6aa55
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h54-vR-E0V">
-                                        <rect key="frame" x="267" y="42" width="40" height="40"/>
-                                        <state key="normal" image="Maps-Center-Direction-icon.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="centerMapPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="bF7-0R-2wb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Jh7-4R-1FR"/>
-                                    <constraint firstAttribute="width" constant="320" id="P0V-LP-oc9"/>
-                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h54-vR-E0V">
+                                <rect key="frame" x="276" y="531" width="28" height="29"/>
+                                <state key="normal" image="Maps-Center-Direction-icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerMapPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="bF7-0R-2wb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -151,8 +145,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="0e1-s2-FzF" id="qHI-ts-fwq"/>
-                        <outlet property="theLabel" destination="Fp6-Pc-ce9" id="GhK-qc-vLR"/>
                         <outlet property="theMap" destination="ZwO-Wu-y2A" id="Kn1-Tx-vag"/>
+                        <outlet property="timeView" destination="vkg-gf-zUG" id="a9u-98-F5O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5N-Ti-xjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,11 +155,8 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
-        <image name="twitter_lov_na_blago.jpg" width="1000" height="773"/>
-=======
         <image name="Maps-Center-Direction-icon.png" width="128" height="128"/>
->>>>>>> d4ff2d2f6c015e4b48eac2ad54badc9b75d36f23
+        <image name="twitter_lov_na_blago.jpg" width="1000" height="773"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

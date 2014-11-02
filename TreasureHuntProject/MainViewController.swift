@@ -14,6 +14,7 @@ import MapKit
 
 
 
+
 class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     
@@ -27,13 +28,15 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var startTime: NSDate = NSDate()
     
+    @IBOutlet weak var timeView: UIView!
     var questionContent: NSString = "Where is the dog?"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        timeView.layer.cornerRadius = 10;
+        timeView.layer.masksToBounds = true;
         
-        // Get
         //Setup our Location Manager
         
         manager = CLLocationManager()
@@ -135,7 +138,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func updateElapsedTime() {
-        elapsedTimeLabel.text = NSString(format:"%d sec", Int(abs(startTime.timeIntervalSinceNow)))
+        elapsedTimeLabel.text = NSString(format:"Time: %d sec", Int(abs(startTime.timeIntervalSinceNow)))
     }
     
     @IBAction func centerMapPressed(sender: AnyObject) {
