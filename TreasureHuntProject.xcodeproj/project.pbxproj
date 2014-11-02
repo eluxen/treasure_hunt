@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6321A0622CB00DC080E /* AppDelegate.swift */; };
+		4679D6351A0622CB00DC080E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6341A0622CB00DC080E /* ViewController.swift */; };
+		4679D6381A0622CB00DC080E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6361A0622CB00DC080E /* Main.storyboard */; };
+		4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6391A0622CB00DC080E /* Images.xcassets */; };
+		4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4679D63B1A0622CB00DC080E /* LaunchScreen.xib */; };
+		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4679D6431A0622CB00DC080E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4679D6251A0622CB00DC080E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4679D62C1A0622CB00DC080E;
+			remoteInfo = TreasureHuntProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4679D6321A0622CB00DC080E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4679D6341A0622CB00DC080E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4679D6371A0622CB00DC080E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4679D6391A0622CB00DC080E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4679D63C1A0622CB00DC080E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4679D6421A0622CB00DC080E /* TreasureHuntProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4679D62A1A0622CB00DC080E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4679D63F1A0622CB00DC080E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4679D6241A0622CB00DC080E = {
+			isa = PBXGroup;
+			children = (
+				4679D62F1A0622CB00DC080E /* TreasureHuntProject */,
+				4679D6451A0622CB00DC080E /* TreasureHuntProjectTests */,
+				4679D62E1A0622CB00DC080E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4679D62E1A0622CB00DC080E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */,
+				4679D6421A0622CB00DC080E /* TreasureHuntProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4679D62F1A0622CB00DC080E /* TreasureHuntProject */ = {
+			isa = PBXGroup;
+			children = (
+				4679D6321A0622CB00DC080E /* AppDelegate.swift */,
+				4679D6341A0622CB00DC080E /* ViewController.swift */,
+				4679D6361A0622CB00DC080E /* Main.storyboard */,
+				4679D6391A0622CB00DC080E /* Images.xcassets */,
+				4679D63B1A0622CB00DC080E /* LaunchScreen.xib */,
+				4679D6301A0622CB00DC080E /* Supporting Files */,
+			);
+			path = TreasureHuntProject;
+			sourceTree = "<group>";
+		};
+		4679D6301A0622CB00DC080E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4679D6311A0622CB00DC080E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4679D6451A0622CB00DC080E /* TreasureHuntProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */,
+				4679D6461A0622CB00DC080E /* Supporting Files */,
+			);
+			path = TreasureHuntProjectTests;
+			sourceTree = "<group>";
+		};
+		4679D6461A0622CB00DC080E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4679D6471A0622CB00DC080E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4679D62C1A0622CB00DC080E /* TreasureHuntProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4679D64C1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProject" */;
+			buildPhases = (
+				4679D6291A0622CB00DC080E /* Sources */,
+				4679D62A1A0622CB00DC080E /* Frameworks */,
+				4679D62B1A0622CB00DC080E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreasureHuntProject;
+			productName = TreasureHuntProject;
+			productReference = 4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4679D6411A0622CB00DC080E /* TreasureHuntProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4679D64F1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProjectTests" */;
+			buildPhases = (
+				4679D63E1A0622CB00DC080E /* Sources */,
+				4679D63F1A0622CB00DC080E /* Frameworks */,
+				4679D6401A0622CB00DC080E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4679D6441A0622CB00DC080E /* PBXTargetDependency */,
+			);
+			name = TreasureHuntProjectTests;
+			productName = TreasureHuntProjectTests;
+			productReference = 4679D6421A0622CB00DC080E /* TreasureHuntProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4679D6251A0622CB00DC080E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = KLARNA;
+				TargetAttributes = {
+					4679D62C1A0622CB00DC080E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					4679D6411A0622CB00DC080E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 4679D62C1A0622CB00DC080E;
+					};
+				};
+			};
+			buildConfigurationList = 4679D6281A0622CB00DC080E /* Build configuration list for PBXProject "TreasureHuntProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4679D6241A0622CB00DC080E;
+			productRefGroup = 4679D62E1A0622CB00DC080E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4679D62C1A0622CB00DC080E /* TreasureHuntProject */,
+				4679D6411A0622CB00DC080E /* TreasureHuntProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4679D62B1A0622CB00DC080E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
+				4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */,
+				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4679D6401A0622CB00DC080E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4679D6291A0622CB00DC080E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4679D6351A0622CB00DC080E /* ViewController.swift in Sources */,
+				4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4679D63E1A0622CB00DC080E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4679D6441A0622CB00DC080E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4679D62C1A0622CB00DC080E /* TreasureHuntProject */;
+			targetProxy = 4679D6431A0622CB00DC080E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4679D6361A0622CB00DC080E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4679D6371A0622CB00DC080E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4679D63B1A0622CB00DC080E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4679D63C1A0622CB00DC080E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4679D64A1A0622CB00DC080E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4679D64B1A0622CB00DC080E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4679D64D1A0622CB00DC080E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TreasureHuntProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4679D64E1A0622CB00DC080E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TreasureHuntProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4679D6501A0622CB00DC080E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TreasureHuntProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureHuntProject.app/TreasureHuntProject";
+			};
+			name = Debug;
+		};
+		4679D6511A0622CB00DC080E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TreasureHuntProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureHuntProject.app/TreasureHuntProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4679D6281A0622CB00DC080E /* Build configuration list for PBXProject "TreasureHuntProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4679D64A1A0622CB00DC080E /* Debug */,
+				4679D64B1A0622CB00DC080E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4679D64C1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4679D64D1A0622CB00DC080E /* Debug */,
+				4679D64E1A0622CB00DC080E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4679D64F1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4679D6501A0622CB00DC080E /* Debug */,
+				4679D6511A0622CB00DC080E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4679D6251A0622CB00DC080E /* Project object */;
+}
