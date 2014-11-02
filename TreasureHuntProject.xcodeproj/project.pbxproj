@@ -13,6 +13,7 @@
 		4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6391A0622CB00DC080E /* Images.xcassets */; };
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
+		46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E567BD1A06626D00536E9C /* klarna-logo.png */; };
 		6ACFA5411A06601000BED937 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5401A06601000BED937 /* Icon.png */; };
 		6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */; };
 		6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5441A0662A400BED937 /* checkin_image.jpeg */; };
@@ -29,8 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		155A5C1723E3AC0DA7B329AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		34FD22C2EFB30383DC615566 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6321A0622CB00DC080E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
 		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		46E567BD1A06626D00536E9C /* klarna-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klarna-logo.png"; sourceTree = "<group>"; };
 		6ACFA5401A06601000BED937 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_lov_na_blago.jpg; sourceTree = "<group>"; };
 		6ACFA5441A0662A400BED937 /* checkin_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkin_image.jpeg; sourceTree = "<group>"; };
@@ -66,23 +66,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3FA59300D55D37B2B4C1CA19 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34FD22C2EFB30383DC615566 /* Pods.debug.xcconfig */,
-				155A5C1723E3AC0DA7B329AC /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4679D6241A0622CB00DC080E = {
 			isa = PBXGroup;
 			children = (
 				4679D62F1A0622CB00DC080E /* TreasureHuntProject */,
 				4679D6451A0622CB00DC080E /* TreasureHuntProjectTests */,
 				4679D62E1A0622CB00DC080E /* Products */,
-				3FA59300D55D37B2B4C1CA19 /* Pods */,
-				756E3C7A7D5ADC64CB3131E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6ACFA5441A0662A400BED937 /* checkin_image.jpeg */,
+				46E567BD1A06626D00536E9C /* klarna-logo.png */,
 				6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */,
 				6ACFA5401A06601000BED937 /* Icon.png */,
 				4679D6311A0622CB00DC080E /* Info.plist */,
@@ -137,14 +127,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		756E3C7A7D5ADC64CB3131E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E3E81F0D9380766CFB49082A /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,11 +134,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4679D64C1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProject" */;
 			buildPhases = (
-				4AED3AAF7262ECD8D5ECB6FB /* Check Pods Manifest.lock */,
 				4679D6291A0622CB00DC080E /* Sources */,
 				4679D62A1A0622CB00DC080E /* Frameworks */,
 				4679D62B1A0622CB00DC080E /* Resources */,
-				F93F8F1B31EBDE0FC3DAEA42 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +212,7 @@
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
 				6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
+				46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,39 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4AED3AAF7262ECD8D5ECB6FB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F93F8F1B31EBDE0FC3DAEA42 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4679D6291A0622CB00DC080E /* Sources */ = {
@@ -407,7 +355,6 @@
 		};
 		4679D64D1A0622CB00DC080E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34FD22C2EFB30383DC615566 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TreasureHuntProject/Info.plist;
@@ -420,7 +367,6 @@
 		};
 		4679D64E1A0622CB00DC080E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 155A5C1723E3AC0DA7B329AC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TreasureHuntProject/Info.plist;

@@ -27,6 +27,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var startTime: NSDate = NSDate()
     
+    var aggregatedTime: Int = 0
+    
     @IBOutlet weak var timeView: UIView!
     var questionContent: NSString = "Where is the dog?"
     
@@ -65,13 +67,13 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         var gameData: NSString?
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             gameData = NSString(data: data, encoding: NSUTF8StringEncoding)
         }
         
         task.resume()
         
-        var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+        var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
         var err: NSError?
         var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
         if (err != nil) {
@@ -82,7 +84,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         }
         return json
     }
-    
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
         myLocations.append(locations[0] as CLLocation)
@@ -154,6 +155,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBAction func showQuestionPressed(sender: AnyObject) {
         UIAlertView(title: "Clue #1", message: questionContent, delegate: nil, cancelButtonTitle: "Dismiss").show()
+    }
+    
+    func checkIn() {
+        
+        
+        
     }
     
     
