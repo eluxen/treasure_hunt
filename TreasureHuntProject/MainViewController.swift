@@ -14,7 +14,6 @@ import MapKit
 
 
 
-
 class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     

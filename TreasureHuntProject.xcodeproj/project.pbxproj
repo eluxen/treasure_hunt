@@ -15,7 +15,7 @@
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
 		6ACFA5411A06601000BED937 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5401A06601000BED937 /* Icon.png */; };
 		6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */; };
-		E7A96F1966FE7BDD01CC8A1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E81F0D9380766CFB49082A /* libPods.a */; };
+		6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5441A0662A400BED937 /* checkin_image.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,7 @@
 		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6ACFA5401A06601000BED937 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_lov_na_blago.jpg; sourceTree = "<group>"; };
+		6ACFA5441A0662A400BED937 /* checkin_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkin_image.jpeg; sourceTree = "<group>"; };
 		E3E81F0D9380766CFB49082A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A96F1966FE7BDD01CC8A1A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +112,7 @@
 		4679D6301A0622CB00DC080E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ACFA5441A0662A400BED937 /* checkin_image.jpeg */,
 				6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */,
 				6ACFA5401A06601000BED937 /* Icon.png */,
 				4679D6311A0622CB00DC080E /* Info.plist */,
@@ -229,6 +230,7 @@
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
 				6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
+				6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
