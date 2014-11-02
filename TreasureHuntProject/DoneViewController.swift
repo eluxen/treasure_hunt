@@ -12,6 +12,7 @@ import AVFoundation
 
 class DoneViewController: UIViewController {
     
+    @IBOutlet weak var timeLabel: UILabel!
     var backgroundMusicPlayer: AVAudioPlayer!
     
     var elapsedTime: Int?
