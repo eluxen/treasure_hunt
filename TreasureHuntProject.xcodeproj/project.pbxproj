@@ -14,6 +14,7 @@
 		4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4679D63B1A0622CB00DC080E /* LaunchScreen.xib */; };
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
+		4684EAC11A063FD300AC78E7 /* Maps-Center-Direction-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4684EAC01A063FD300AC78E7 /* Maps-Center-Direction-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
 		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4684EAC01A063FD300AC78E7 /* Maps-Center-Direction-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Maps-Center-Direction-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		4679D6301A0622CB00DC080E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4684EAC01A063FD300AC78E7 /* Maps-Center-Direction-icon.png */,
 				4679D6311A0622CB00DC080E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4684EAC11A063FD300AC78E7 /* Maps-Center-Direction-icon.png in Resources */,
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
 				4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
@@ -411,6 +415,7 @@
 				4679D64E1A0622CB00DC080E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4679D64F1A0622CB00DC080E /* Build configuration list for PBXNativeTarget "TreasureHuntProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				4679D6511A0622CB00DC080E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

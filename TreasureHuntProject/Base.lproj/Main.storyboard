@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RG9-xJ-dgr">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -76,26 +78,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-Wu-y2A">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-Wu-y2A">
+                                <rect key="frame" x="0.0" y="60" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" id="Qme-OW-qDg"/>
+                                    <constraint firstAttribute="width" constant="320" id="p3R-1G-oua"/>
+                                </constraints>
                             </mapView>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
-                                <rect key="frame" x="0.0" y="478" width="320" height="95"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImX-HX-DBi">
+                                <rect key="frame" x="28" y="81" width="112" height="30"/>
+                                <state key="normal" title="Show Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showQuestionPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="N2p-e8-efc"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
+                                <rect key="frame" x="0.0" y="478" width="320" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-Pc-ce9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-Pc-ce9">
                                         <rect key="frame" x="24" y="15" width="267" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-s2-FzF">
+                                        <rect key="frame" x="31" y="55" width="86" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h54-vR-E0V">
+                                        <rect key="frame" x="267" y="42" width="40" height="40"/>
+                                        <state key="normal" image="Maps-Center-Direction-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="centerMapPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="bF7-0R-2wb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Jh7-4R-1FR"/>
+                                    <constraint firstAttribute="width" constant="320" id="P0V-LP-oc9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZwO-Wu-y2A" firstAttribute="top" secondItem="jlB-fX-W9N" secondAttribute="topMargin" constant="60" id="Dxo-wI-2fj"/>
+                            <constraint firstItem="yif-uU-xqi" firstAttribute="top" secondItem="ZwO-Wu-y2A" secondAttribute="bottom" constant="-60" id="bGh-WE-hU8"/>
+                            <constraint firstItem="yif-uU-xqi" firstAttribute="top" secondItem="vkg-gf-zUG" secondAttribute="bottom" id="gAx-ae-bZh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XlH-kw-2f3"/>
                     <connections>
+                        <outlet property="elapsedTimeLabel" destination="0e1-s2-FzF" id="qHI-ts-fwq"/>
                         <outlet property="theLabel" destination="Fp6-Pc-ce9" id="GhK-qc-vLR"/>
                         <outlet property="theMap" destination="ZwO-Wu-y2A" id="Kn1-Tx-vag"/>
                     </connections>
@@ -105,6 +145,9 @@
             <point key="canvasLocation" x="769" y="239"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Maps-Center-Direction-icon.png" width="128" height="128"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
