@@ -30,10 +30,25 @@ class ViewController: UIViewController {
         }
         // get game contents from server
         
-        // push main view controller
-        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var mainViewController : MainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as MainViewController
-        self.navigationController?.pushViewController(mainViewController, animated: true)
+        let url = NSURL(fileURLWithPath: NSString(format: "https://boiling-forest-7567.herokuapp.com/game/search?name=%@", gameName.text))
+            
+        var gameData: NSString?
+            
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            //gameData = NSString(data: data, encoding: NSUTF8StringEncoding)
+            //NSLog("game data length = %d",gameData!.length)
+            //var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
+            //var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+            // push main view controller
+            dispatch_sync(dispatch_get_main_queue(), {
+            var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            var mainViewController : MainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as MainViewController
+            //mainViewController.dataObject = json
+                self.navigationController?.pushViewController(mainViewController, animated: true) })
+        }
+            
+        task.resume()
+    
     }
 }
 

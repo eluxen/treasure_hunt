@@ -29,8 +29,11 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var aggregatedTime: Int = 0
     
+    var questionIndex: Int = 0
+    
+    var dataObject: NSDictionary?
+    
     @IBOutlet weak var timeView: UIView!
-    var questionContent: NSString = "Where is the dog?"
     
     override func viewDidLoad() {
         
@@ -61,28 +64,11 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
-    
-    func GetGameData() -> NSDictionary {
-        let url = NSURL(string: "http://nadav-klarna.ngrok.com/games/search?name=Where")
-        
-        var gameData: NSString?
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            gameData = NSString(data: data, encoding: NSUTF8StringEncoding)
-        }
-        
-        task.resume()
-        
-        var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
-        var err: NSError?
-        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
-        if (err != nil) {
-            
-        }
-        else {
-            
-        }
-        return json
+
+    @IBAction func checkInButtonPressed(sender: AnyObject) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var doneViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as UIViewController
+        self.navigationController?.pushViewController(doneViewController, animated: true)
     }
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
@@ -154,7 +140,9 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     
     @IBAction func showQuestionPressed(sender: AnyObject) {
-        UIAlertView(title: "Clue #1", message: questionContent, delegate: nil, cancelButtonTitle: "Dismiss").show()
+        //var questions: NSArray = dataObject!["Points"] as NSArray
+        //var question: NSDictionary = questions[questionIndex] as NSDictionary
+        UIAlertView(title: "Clue #1", message: /*question["Question"] as NSString*/ "Where is the dog?", delegate: nil, cancelButtonTitle: "Dismiss").show()
     }
     
     func checkIn() {
