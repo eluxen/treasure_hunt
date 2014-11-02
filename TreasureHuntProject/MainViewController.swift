@@ -62,25 +62,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
-        
         theLabel.text = "\(locations[0])"
         
         myLocations.append(locations[0] as CLLocation)
         
         
-        
-        let spanX = 0.007
-        
-        let spanY = 0.007
-        
-        var newRegion = MKCoordinateRegion(center: theMap.userLocation.coordinate, span: MKCoordinateSpanMake(spanX, spanY))
-        
-        theMap.setRegion(newRegion, animated: true)
-        
-        
-        
         if (myLocations.count > 1){
-            
             var sourceIndex = myLocations.count - 1
             
             var destinationIndex = myLocations.count - 2
@@ -96,7 +83,16 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             var polyline = MKPolyline(coordinates: &a, count: a.count)
             
             theMap.addOverlay(polyline)
+        }
+        else
+        {
+            let spanX = 0.007
             
+            let spanY = 0.007
+            
+            var newRegion = MKCoordinateRegion(center: myLocations[0].coordinate, span: MKCoordinateSpanMake(spanX, spanY))
+            
+            theMap.setRegion(newRegion, animated: true)
         }
         
     }
