@@ -136,6 +136,23 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
                                     </textView>
+<<<<<<< HEAD
+                                    <view userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-CX-Fam">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImX-HX-DBi">
+                                                <rect key="frame" x="88" y="8" width="112" height="30"/>
+                                                <state key="normal" title="Show Question">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showQuestionPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="N2p-e8-efc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+=======
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -152,6 +169,7 @@
                                             <action selector="showQuestionPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="N2p-e8-efc"/>
                                         </connections>
                                     </button>
+>>>>>>> 64a5edd4560a18a6b656edac8659cd664d83adb7
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -165,7 +183,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="checkInButtonPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="Cbw-AV-zCr"/>
+<<<<<<< HEAD
+                                    <action selector="checkInButtonPressed:" destination="hqc-tP-ksl" eventType="touchUpInside" id="sOV-pm-XKT"/>
+=======
+                                    <action selector="onCheckIn:" destination="hqc-tP-ksl" eventType="touchUpInside" id="1S1-Lj-fET"/>
+>>>>>>> 64a5edd4560a18a6b656edac8659cd664d83adb7
                                 </connections>
                             </button>
                         </subviews>

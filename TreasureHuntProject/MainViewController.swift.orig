@@ -31,15 +31,19 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var aggregatedTime: Int = 0
     
+<<<<<<< HEAD
     var questionIndex: Int = 0
     
     var dataObject: NSDictionary?
     
+    @IBOutlet weak var timeView: UIView!
+=======
     @IBOutlet weak var questionView: UIView!
     @IBOutlet weak var showQuestionView: UIView!
     @IBOutlet weak var timeView: UIView!
     
     var questionContent: NSString = "Where is the dog?"
+>>>>>>> 64a5edd4560a18a6b656edac8659cd664d83adb7
     
     override func viewDidLoad() {
         
@@ -77,13 +81,13 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
-    
+
     @IBAction func checkInButtonPressed(sender: AnyObject) {
         var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         var doneViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as UIViewController
         self.navigationController?.pushViewController(doneViewController, animated: true)
-        }
-        
+    }
+    
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
         myLocations.append(locations[0] as CLLocation)
         
@@ -153,13 +157,21 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     
     @IBAction func showQuestionPressed(sender: AnyObject) {
+<<<<<<< HEAD
+        //var questions: NSArray = dataObject!["Points"] as NSArray
+        //var question: NSDictionary = questions[questionIndex] as NSDictionary
+        UIAlertView(title: "Clue #1", message: /*question["Question"] as NSString*/ "Where is the dog?", delegate: nil, cancelButtonTitle: "Dismiss").show()
+=======
         showQuestionView.hidden = true;
         questionView.hidden = false;
+>>>>>>> 64a5edd4560a18a6b656edac8659cd664d83adb7
     }
     
     @IBAction func onQuestionHide(sender: UIButton) {
         showQuestionView.hidden = false;
         questionView.hidden = true;
+    }
+    @IBAction func onCheckIn(sender: UIButton) {
     }
     
     
