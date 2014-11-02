@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9572EF09-FA2B-4A7C-8361-25C5A8D88FC9</string>
+	<string>517638C4-EDD2-4D25-9206-265E9AB58FE7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TreasureHuntProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>0D6832B536920FA40C01E7A9A0298E1CF153C845</string>
 			<key>IDESourceControlWCCName</key>
-			<string>treasure_hunt</string>
+			<string>TreasureHuntProject</string>
 		</dict>
 	</array>
 </dict>

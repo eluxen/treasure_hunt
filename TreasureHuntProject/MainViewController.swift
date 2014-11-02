@@ -61,10 +61,24 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
     
+    func GetGameData() -> NSDictionary {
+        //get json.
+        var gameData = "Tomer"
+        
+        var stringData: NSData? = gameData.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+        var err: NSError?;
+        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData!, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
+        if (err != nil) {
+            
+        }
+        else {
+            
+        }
+        return json
+    }
     
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
-        
         myLocations.append(locations[0] as CLLocation)
         
         if (myLocations.count > 1){
