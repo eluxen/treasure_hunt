@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RG9-xJ-dgr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RG9-xJ-dgr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="769" y="239"/>
         </scene>
-        <!--View Controller-->
+        <!--Done View Controller-->
         <scene sceneID="k26-0n-QjJ">
             <objects>
-                <viewController storyboardIdentifier="DoneViewController" id="KJ3-Hm-qOb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoneViewController" id="KJ3-Hm-qOb" customClass="DoneViewController" customModule="TreasureHuntProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rTA-8y-kiZ"/>
                         <viewControllerLayoutGuide type="bottom" id="Q2s-ii-Dlg"/>
@@ -203,10 +203,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Done" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MY-kb-mIg">
-                                <rect key="frame" x="139" y="248" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TreasureDone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TZc-L8-IeQ">
+                                <rect key="frame" x="-9" y="57" width="329" height="511"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You found the treasure!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MY-kb-mIg">
+                                <rect key="frame" x="32" y="68" width="256" height="54"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" red="0.85882359740000003" green="0.74901962280000001" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -215,11 +218,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGX-E4-SAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="240"/>
+            <point key="canvasLocation" x="1148" y="240"/>
         </scene>
     </scenes>
     <resources>
         <image name="Maps-Center-Direction-icon.png" width="128" height="128"/>
+        <image name="TreasureDone.jpg" width="1630" height="2000"/>
         <image name="checkInImage.png" width="512" height="512"/>
         <image name="twitter_lov_na_blago.jpg" width="1000" height="773"/>
     </resources>

@@ -14,6 +14,9 @@
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
 		46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E567BD1A06626D00536E9C /* klarna-logo.png */; };
+		6A72E6EF1A06789100C37668 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A72E6EE1A06789100C37668 /* DoneViewController.swift */; };
+		6A72E6F11A06799C00C37668 /* TreasureDone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A72E6F01A06799C00C37668 /* TreasureDone.jpg */; };
+		6A72E6F31A0679AB00C37668 /* money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A72E6F21A0679AB00C37668 /* money.mp3 */; };
 		6ACFA5411A06601000BED937 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5401A06601000BED937 /* Icon.png */; };
 		6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */; };
 		6ACFA5491A0668D400BED937 /* checkInImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5481A0668D400BED937 /* checkInImage.png */; };
@@ -42,6 +45,9 @@
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
 		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		46E567BD1A06626D00536E9C /* klarna-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klarna-logo.png"; sourceTree = "<group>"; };
+		6A72E6EE1A06789100C37668 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		6A72E6F01A06799C00C37668 /* TreasureDone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TreasureDone.jpg; sourceTree = "<group>"; };
+		6A72E6F21A0679AB00C37668 /* money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = money.mp3; sourceTree = "<group>"; };
 		6ACFA5401A06601000BED937 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_lov_na_blago.jpg; sourceTree = "<group>"; };
 		6ACFA5481A0668D400BED937 /* checkInImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkInImage.png; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 				4679D6321A0622CB00DC080E /* AppDelegate.swift */,
 				4679D6341A0622CB00DC080E /* ViewController.swift */,
 				4679D6361A0622CB00DC080E /* Main.storyboard */,
+				6A72E6EE1A06789100C37668 /* DoneViewController.swift */,
 				4679D6521A06286300DC080E /* MainViewController.swift */,
 				4679D6391A0622CB00DC080E /* Images.xcassets */,
 				4679D63B1A0622CB00DC080E /* LaunchScreen.xib */,
@@ -102,8 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				6ACFA5481A0668D400BED937 /* checkInImage.png */,
+				6A72E6F01A06799C00C37668 /* TreasureDone.jpg */,
 				46E567BD1A06626D00536E9C /* klarna-logo.png */,
 				6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */,
+				6A72E6F21A0679AB00C37668 /* money.mp3 */,
 				6ACFA5401A06601000BED937 /* Icon.png */,
 			);
 			name = "Supporting Files";
@@ -209,7 +218,9 @@
 				6ACFA5491A0668D400BED937 /* checkInImage.png in Resources */,
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
 				6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */,
+				6A72E6F31A0679AB00C37668 /* money.mp3 in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
+				6A72E6F11A06799C00C37668 /* TreasureDone.jpg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
 				46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */,
 			);
@@ -229,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A72E6EF1A06789100C37668 /* DoneViewController.swift in Sources */,
 				4679D6531A06286300DC080E /* MainViewController.swift in Sources */,
 				4679D6351A0622CB00DC080E /* ViewController.swift in Sources */,
 				4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */,
