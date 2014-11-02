@@ -28,6 +28,7 @@ class DoneViewController: UIViewController {
         backgroundMusicPlayer.prepareToPlay()
         backgroundMusicPlayer.play()
         secondsLabel.text = NSString(format: "In %d seconds!", elapsedTime!)
+        self.navigationItem.title = "Congratulations!"
     }
 
     @IBAction func restartGameButtonPressed(sender: AnyObject) {

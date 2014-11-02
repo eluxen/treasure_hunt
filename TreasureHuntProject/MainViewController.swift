@@ -52,6 +52,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         questionView.layer.cornerRadius = 10;
         questionView.layer.masksToBounds = true;
         
+        self.navigationItem.title = "Let's Hunt!"
+
         //Setup our Location Manager
         
         manager = CLLocationManager()
