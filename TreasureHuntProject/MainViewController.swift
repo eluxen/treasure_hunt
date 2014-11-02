@@ -48,7 +48,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         manager.startUpdatingLocation()
         
         
-        
         //Setup our Map View
         
         theMap.delegate = self
@@ -57,6 +56,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         theMap.showsUserLocation = true
         
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
     
     
@@ -65,8 +65,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         theLabel.text = "\(locations[0])"
         
         myLocations.append(locations[0] as CLLocation)
-        
-        elapsedTimeLabel.text = NSString(format:"%d sec", Int(abs(startTime.timeIntervalSinceNow)))
         
         if (myLocations.count > 1){
             var sourceIndex = myLocations.count - 1
@@ -124,6 +122,9 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
     }
     
+    func updateElapsedTime() {
+        elapsedTimeLabel.text = NSString(format:"%d sec", Int(abs(startTime.timeIntervalSinceNow)))
+    }
     
     @IBAction func centerMapPressed(sender: AnyObject) {
         centerMapAtLocation(myLocations.last!.coordinate)
