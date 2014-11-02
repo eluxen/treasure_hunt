@@ -75,9 +75,30 @@
                     <view key="view" contentMode="scaleToFill" id="jlB-fX-W9N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-Wu-y2A">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                            </mapView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
+                                <rect key="frame" x="0.0" y="478" width="320" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-Pc-ce9">
+                                        <rect key="frame" x="24" y="15" width="267" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XlH-kw-2f3"/>
+                    <connections>
+                        <outlet property="theLabel" destination="Fp6-Pc-ce9" id="GhK-qc-vLR"/>
+                        <outlet property="theMap" destination="ZwO-Wu-y2A" id="Kn1-Tx-vag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5N-Ti-xjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
