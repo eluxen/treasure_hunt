@@ -33,19 +33,18 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var questionIndex: Int = 0
     
-    var dataObject: NSDictionary?
+    var points: NSArray?
+    
+    var desiredLocation: CLLocation?
     
     @IBOutlet weak var questionView: UIView!
     @IBOutlet weak var showQuestionView: UIView!
     @IBOutlet weak var timeView: UIView!
     
-    var questionContent: NSString = "Where is the dog?"
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         showQuestionView.hidden = true;
-        questionText.text = questionContent;
         
         timeView.layer.cornerRadius = 10;
         timeView.layer.masksToBounds = true;
@@ -76,13 +75,39 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         theMap.showsUserLocation = true
         
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
+        
+        GetNextQuestion()
     }
     
+    func GetNextQuestion() {
+        var point: NSDictionary = points![questionIndex] as NSDictionary
+        var question: NSString = point["Question"] as NSString
+        questionText.text = question
+        var y: NSString = point["Latitude"] as NSString
+        var x: NSString = point["Longtitude"] as NSString
+        desiredLocation = CLLocation(latitude: CLLocationDegrees(y.doubleValue), longitude: CLLocationDegrees(x.doubleValue))
+    }
+    
+    
     @IBAction func checkInButtonPressed(sender: AnyObject) {
-        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var doneViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as UIViewController
-        self.navigationController?.pushViewController(doneViewController, animated: true)
+        var distanceInMeters: Double = myLocations.last!.distanceFromLocation(desiredLocation)
+        if distanceInMeters < 10 {
+            if questionIndex < points!.count {
+                questionIndex++;
+                GetNextQuestion()
+            }
+            else {
+                var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                var doneViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as UIViewController
+                self.navigationController?.pushViewController(doneViewController, animated: true)
+            }
         }
+        else {
+            UIAlertView(title: "Treasure Hunt", message: "YOU SUCK!", delegate: nil, cancelButtonTitle: "Dismiss").show()
+        }
+    }
+    
+    
         
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
         myLocations.append(locations[0] as CLLocation)
