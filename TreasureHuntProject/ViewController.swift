@@ -30,13 +30,14 @@ class ViewController: UIViewController {
         }
         // get game contents from server
         let url = NSURL(string: NSString(format: "https://boiling-forest-7567.herokuapp.com/game/search?name=%@", gameName.text))
-        NSLog("%@",url!)
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            if data.length == 0 {
-                UIAlertView(title: "Treasure Hunt", message: "Wrong game name!", delegate: nil, cancelButtonTitle: "Proceed").show()
+            var gameData: NSString? = NSString(data: data, encoding: NSUTF8StringEncoding)
+            if gameData == "{}" || gameData?.length == 0 {
+                 dispatch_sync(dispatch_get_main_queue(), {
+                    UIAlertView(title: "Treasure Hunt", message: "Wrong game name!", delegate: nil, cancelButtonTitle: "Proceed").show()
+                    })
                 return;
             }
-            var gameData: NSString? = NSString(data: data, encoding: NSUTF8StringEncoding)
             var stringData: NSData = gameData!.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
             var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
             // push main view controller

@@ -234,6 +234,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="secondsLabel" destination="juD-vE-aQf" id="w9T-aF-pBe"/>
                         <outlet property="timeLabel" destination="juD-vE-aQf" id="RKX-Kw-ZmS"/>
                     </connections>
                 </viewController>
