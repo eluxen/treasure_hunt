@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+      <wpt lat="32.06707417" lon="34.79278754">
+        <ele>13.9261026382446</ele>
+      </wpt>
+      <wpt lat="32.06687" lon="34.79411">
+        <ele>20.1458225250244</ele>
+      </wpt>
+      <wpt lat="32.06574" lon="34.79375">
+        <ele>20.8187294006348</ele>
+      </wpt>
+      <wpt lat="32.06604" lon="34.79273">
+        <ele>17.3507022857666</ele>
+      </wpt>
+      <wpt lat="32.06579" lon="34.79379">
+        <ele>20.703987121582</ele>
+      </wpt>
+      <wpt lat="32.06688" lon="34.79405">
+        <ele>20.0124893188477</ele>
+      </wpt>
+      <wpt lat="32.06706" lon="34.79282">
+        <ele>14.0797491073608</ele>
+      </wpt>
+      <wpt lat="32.06353" lon="34.7921">
+        <ele>19.8012504577637</ele>
+      </wpt>
+      <wpt lat="32.06374" lon="34.79077">
+        <ele>17.4145965576172</ele>
+      </wpt>
+      <wpt lat="32.06433" lon="34.79114">
+        <ele>16.8749542236328</ele>
+      </wpt>
+      <wpt lat="32.06421" lon="34.79233">
+        <ele>20.0089206695557</ele>
+      </wpt>
+      <wpt lat="32.06506" lon="34.79248">
+        <ele>22.9234142303467</ele>
+      </wpt>
+      <wpt lat="32.06477" lon="34.79462">
+        <ele>23.2203598022461</ele>
+      </wpt>
+</gpx>
