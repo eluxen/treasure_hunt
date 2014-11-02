@@ -23,7 +23,7 @@
         <!--Treasure Hunt-->
         <scene sceneID="7Rq-MZ-MkT">
             <objects>
-                <viewController id="8Ag-tI-YTk" sceneMemberID="viewController">
+                <viewController id="8Ag-tI-YTk" customClass="ViewController" customModule="TreasureHuntProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4MT-X3-Dg6"/>
                         <viewControllerLayoutGuide type="bottom" id="xTf-y9-ej4"/>
