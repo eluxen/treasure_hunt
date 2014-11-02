@@ -97,12 +97,6 @@
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-gf-zUG">
                                 <rect key="frame" x="0.0" y="478" width="320" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-Pc-ce9">
-                                        <rect key="frame" x="24" y="15" width="267" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-s2-FzF">
                                         <rect key="frame" x="31" y="55" width="86" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -136,7 +130,6 @@
                     <navigationItem key="navigationItem" id="XlH-kw-2f3"/>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="0e1-s2-FzF" id="qHI-ts-fwq"/>
-                        <outlet property="theLabel" destination="Fp6-Pc-ce9" id="GhK-qc-vLR"/>
                         <outlet property="theMap" destination="ZwO-Wu-y2A" id="Kn1-Tx-vag"/>
                     </connections>
                 </viewController>

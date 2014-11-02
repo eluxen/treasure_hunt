@@ -19,8 +19,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBOutlet weak var theMap: MKMapView!
     
-    @IBOutlet weak var theLabel: UILabel!
-    
     @IBOutlet weak var elapsedTimeLabel: UILabel!
     
     var manager:CLLocationManager!
@@ -34,7 +32,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     override func viewDidLoad() {
         
         super.viewDidLoad()
-                
+        
+        // Get
         //Setup our Location Manager
         
         manager = CLLocationManager()
@@ -59,11 +58,24 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
     
+    func GetGameData() -> NSDictionary {
+        //get json.
+        var gameData = "Tomer"
+        
+        var stringData: NSData? = gameData.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+        var err: NSError?;
+        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(stringData!, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
+        if (err != nil) {
+            
+        }
+        else {
+            
+        }
+        return json
+    }
     
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
-        theLabel.text = "\(locations[0])"
-        
         myLocations.append(locations[0] as CLLocation)
         
         if (myLocations.count > 1){
