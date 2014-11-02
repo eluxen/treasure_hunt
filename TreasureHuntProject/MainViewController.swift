@@ -21,20 +21,20 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBOutlet weak var theLabel: UILabel!
     
-    
+    @IBOutlet weak var elapsedTimeLabel: UILabel!
     
     var manager:CLLocationManager!
     
     var myLocations: [CLLocation] = []
     
+    var startTime: NSDate = NSDate()
     
+    var questionContent: NSString = "Where is the dog?"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        
-        
+                
         //Setup our Location Manager
         
         manager = CLLocationManager()
@@ -48,7 +48,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         manager.startUpdatingLocation()
         
         
-        
         //Setup our Map View
         
         theMap.delegate = self
@@ -57,30 +56,17 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
         theMap.showsUserLocation = true
         
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateElapsedTime", userInfo: nil, repeats: true)
     }
     
     
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
-        
         theLabel.text = "\(locations[0])"
         
         myLocations.append(locations[0] as CLLocation)
         
-        
-        
-        let spanX = 0.007
-        
-        let spanY = 0.007
-        
-        var newRegion = MKCoordinateRegion(center: theMap.userLocation.coordinate, span: MKCoordinateSpanMake(spanX, spanY))
-        
-        theMap.setRegion(newRegion, animated: true)
-        
-        
-        
         if (myLocations.count > 1){
-            
             var sourceIndex = myLocations.count - 1
             
             var destinationIndex = myLocations.count - 2
@@ -96,11 +82,24 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             var polyline = MKPolyline(coordinates: &a, count: a.count)
             
             theMap.addOverlay(polyline)
-            
+        }
+        else
+        {
+            centerMapAtLocation(myLocations.last!.coordinate)
         }
         
     }
     
+    func centerMapAtLocation(center_point: CLLocationCoordinate2D) {
+        
+        let spanX = 0.007
+        
+        let spanY = 0.007
+        
+        var newRegion = MKCoordinateRegion(center: center_point, span: MKCoordinateSpanMake(spanX, spanY))
+        
+        theMap.setRegion(newRegion, animated: true)
+    }
     
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
@@ -122,5 +121,19 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         return nil
         
     }
+    
+    func updateElapsedTime() {
+        elapsedTimeLabel.text = NSString(format:"%d sec", Int(abs(startTime.timeIntervalSinceNow)))
+    }
+    
+    @IBAction func centerMapPressed(sender: AnyObject) {
+        centerMapAtLocation(myLocations.last!.coordinate)
+    }
+    
+    
+    @IBAction func showQuestionPressed(sender: AnyObject) {
+        UIAlertView(title: "Clue #1", message: questionContent, delegate: nil, cancelButtonTitle: "Dismiss").show()
+    }
+    
     
 }

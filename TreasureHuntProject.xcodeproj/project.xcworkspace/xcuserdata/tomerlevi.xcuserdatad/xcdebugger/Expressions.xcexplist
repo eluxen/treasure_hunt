@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TreasureHuntProject.ViewController.playButtonPressed (TreasureHuntProject.ViewController)(ObjectiveC.UIButton) -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TreasureHuntProject.MainViewController.locationManager (TreasureHuntProject.MainViewController)(ObjectiveC.CLLocationManager, didUpdateLocations : Swift.Array&lt;Swift.AnyObject&gt;) -&gt; ():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "theMap.userLocation.coordinate">
+            </PersistentString>
+            <PersistentString
+               value = "theLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "locations[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
