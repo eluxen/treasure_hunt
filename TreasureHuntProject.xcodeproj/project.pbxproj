@@ -11,7 +11,6 @@
 		4679D6351A0622CB00DC080E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6341A0622CB00DC080E /* ViewController.swift */; };
 		4679D6381A0622CB00DC080E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6361A0622CB00DC080E /* Main.storyboard */; };
 		4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6391A0622CB00DC080E /* Images.xcassets */; };
-		4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4679D63B1A0622CB00DC080E /* LaunchScreen.xib */; };
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
 		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
 		6ACFA5411A06601000BED937 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5401A06601000BED937 /* Icon.png */; };
@@ -228,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
-				4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */,
 				6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
