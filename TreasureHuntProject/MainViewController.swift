@@ -92,13 +92,16 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     @IBAction func checkInButtonPressed(sender: AnyObject) {
         var distanceInMeters: Double = myLocations.last!.distanceFromLocation(desiredLocation)
         if distanceInMeters < 10 {
+            questionIndex++;
             if questionIndex < points!.count {
-                questionIndex++;
+                UIAlertView(title: "Treasure Hunt", message: "YOU ROCK!", delegate: nil, cancelButtonTitle: "Proceed").show()
+                showQuestionPressed("")
                 GetNextQuestion()
             }
             else {
                 var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                var doneViewController : UIViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as UIViewController
+                var doneViewController : DoneViewController = storyboard.instantiateViewControllerWithIdentifier("DoneViewController") as DoneViewController
+                doneViewController.elapsedTime = Int(abs(startTime.timeIntervalSinceNow))
                 self.navigationController?.pushViewController(doneViewController, animated: true)
             }
         }
@@ -116,7 +119,6 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             var sourceIndex = myLocations.count - 1
             
             var destinationIndex = myLocations.count - 2
-            
             
             
             let c1 = myLocations[sourceIndex].coordinate
