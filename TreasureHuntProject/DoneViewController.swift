@@ -15,6 +15,8 @@ class DoneViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     var backgroundMusicPlayer: AVAudioPlayer!
     
+    var elapsedTime: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = NSBundle.mainBundle().URLForResource("money.mp3", withExtension: nil)
