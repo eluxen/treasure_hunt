@@ -27,4 +27,7 @@ class DoneViewController: UIViewController {
         backgroundMusicPlayer.play()
     }
 
+    @IBAction func restartGameButtonPressed(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
 }
