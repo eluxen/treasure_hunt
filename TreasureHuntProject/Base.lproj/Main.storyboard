@@ -127,7 +127,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor ">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Futura-Medium"/>
+                                                    <font key="NSFont" size="18" name="MarkerFelt-Thin"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
@@ -153,7 +153,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImX-HX-DBi">
                                         <rect key="frame" x="88" y="8" width="112" height="30"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
-                                        <state key="normal" title="Show Question">
+                                        <state key="normal" title="Show Hint">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
