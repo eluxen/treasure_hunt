@@ -13,6 +13,7 @@
 		4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4679D6391A0622CB00DC080E /* Images.xcassets */; };
 		4679D63D1A0622CB00DC080E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4679D63B1A0622CB00DC080E /* LaunchScreen.xib */; };
 		4679D6491A0622CB00DC080E /* TreasureHuntProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */; };
+		4679D6531A06286300DC080E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679D6521A06286300DC080E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4679D6421A0622CB00DC080E /* TreasureHuntProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679D6471A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679D6481A0622CB00DC080E /* TreasureHuntProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntProjectTests.swift; sourceTree = "<group>"; };
+		4679D6521A06286300DC080E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4679D6321A0622CB00DC080E /* AppDelegate.swift */,
 				4679D6341A0622CB00DC080E /* ViewController.swift */,
 				4679D6361A0622CB00DC080E /* Main.storyboard */,
+				4679D6521A06286300DC080E /* MainViewController.swift */,
 				4679D6391A0622CB00DC080E /* Images.xcassets */,
 				4679D63B1A0622CB00DC080E /* LaunchScreen.xib */,
 				4679D6301A0622CB00DC080E /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4679D6531A06286300DC080E /* MainViewController.swift in Sources */,
 				4679D6351A0622CB00DC080E /* ViewController.swift in Sources */,
 				4679D6331A0622CB00DC080E /* AppDelegate.swift in Sources */,
 			);
