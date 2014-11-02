@@ -82,7 +82,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     func GetNextQuestion() {
         var point: NSDictionary = points![questionIndex] as NSDictionary
-        var question: NSString = point["Question"] as NSString
+        var question: NSString = NSString(format: "Hint #%d:", questionIndex + 1)
+        question.stringByAppendingString(point["Question"] as NSString)
         questionText.text = question
         var y: NSString = point["Latitude"] as NSString
         var x: NSString = point["Longtitude"] as NSString
