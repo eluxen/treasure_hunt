@@ -23,20 +23,32 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var manager:CLLocationManager!
     
+    @IBOutlet weak var questionText: UITextView!
+    
     var myLocations: [CLLocation] = []
     
     var startTime: NSDate = NSDate()
     
     var aggregatedTime: Int = 0
     
+    @IBOutlet weak var questionView: UIView!
+    @IBOutlet weak var showQuestionView: UIView!
     @IBOutlet weak var timeView: UIView!
+    
     var questionContent: NSString = "Where is the dog?"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        showQuestionView.hidden = true;
+        questionText.text = questionContent;
+        
         timeView.layer.cornerRadius = 10;
         timeView.layer.masksToBounds = true;
+        showQuestionView.layer.cornerRadius = 10;
+        showQuestionView.layer.masksToBounds = true;
+        questionView.layer.cornerRadius = 10;
+        questionView.layer.masksToBounds = true;
         
         //Setup our Location Manager
         
@@ -154,13 +166,15 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     
     @IBAction func showQuestionPressed(sender: AnyObject) {
-        UIAlertView(title: "Clue #1", message: questionContent, delegate: nil, cancelButtonTitle: "Dismiss").show()
+        showQuestionView.hidden = true;
+        questionView.hidden = false;
     }
     
-    func checkIn() {
-        
-        
-        
+    @IBAction func onQuestionHide(sender: UIButton) {
+        showQuestionView.hidden = false;
+        questionView.hidden = true;
+    }
+    @IBAction func onCheckIn(sender: UIButton) {
     }
     
     

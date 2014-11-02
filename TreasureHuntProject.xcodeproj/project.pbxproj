@@ -16,7 +16,7 @@
 		46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E567BD1A06626D00536E9C /* klarna-logo.png */; };
 		6ACFA5411A06601000BED937 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5401A06601000BED937 /* Icon.png */; };
 		6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */; };
-		6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5441A0662A400BED937 /* checkin_image.jpeg */; };
+		6ACFA5491A0668D400BED937 /* checkInImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACFA5481A0668D400BED937 /* checkInImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		4679D62D1A0622CB00DC080E /* TreasureHuntProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4679D6311A0622CB00DC080E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TreasureHuntProject/Info.plist; sourceTree = "<group>"; };
 		4679D6321A0622CB00DC080E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4679D6341A0622CB00DC080E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4679D6371A0622CB00DC080E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,8 +44,7 @@
 		46E567BD1A06626D00536E9C /* klarna-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klarna-logo.png"; sourceTree = "<group>"; };
 		6ACFA5401A06601000BED937 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter_lov_na_blago.jpg; sourceTree = "<group>"; };
-		6ACFA5441A0662A400BED937 /* checkin_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkin_image.jpeg; sourceTree = "<group>"; };
-		E3E81F0D9380766CFB49082A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACFA5481A0668D400BED937 /* checkInImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkInImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +71,7 @@
 				4679D62F1A0622CB00DC080E /* TreasureHuntProject */,
 				4679D6451A0622CB00DC080E /* TreasureHuntProjectTests */,
 				4679D62E1A0622CB00DC080E /* Products */,
+				4679D6311A0622CB00DC080E /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +101,10 @@
 		4679D6301A0622CB00DC080E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6ACFA5441A0662A400BED937 /* checkin_image.jpeg */,
+				6ACFA5481A0668D400BED937 /* checkInImage.png */,
 				46E567BD1A06626D00536E9C /* klarna-logo.png */,
 				6ACFA5421A06602600BED937 /* twitter_lov_na_blago.jpg */,
 				6ACFA5401A06601000BED937 /* Icon.png */,
-				4679D6311A0622CB00DC080E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,10 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACFA5491A0668D400BED937 /* checkInImage.png in Resources */,
 				4679D6381A0622CB00DC080E /* Main.storyboard in Resources */,
 				6ACFA5431A06602600BED937 /* twitter_lov_na_blago.jpg in Resources */,
 				4679D63A1A0622CB00DC080E /* Images.xcassets in Resources */,
-				6ACFA5451A0662A400BED937 /* checkin_image.jpeg in Resources */,
 				6ACFA5411A06601000BED937 /* Icon.png in Resources */,
 				46E567BE1A06626D00536E9C /* klarna-logo.png in Resources */,
 			);
